@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
 import com.huawei.hms.maps.OnMapReadyCallback;
 import com.huawei.hms.maps.SupportMapFragment;
-import com.huawei.hms.maps.workshop.utils.MapUtils;
+import com.huawei.hms.androiddemo.utils.MapUtils;
 import com.huawei.hms.maps.model.LatLng;
 import com.huawei.hms.maps.model.Polyline;
 import com.huawei.hms.maps.model.PolylineOptions;
@@ -43,8 +43,8 @@ import com.huawei.hms.maps.util.LogM;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsEdit;
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsRight;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsEdit;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsRight;
 
 /**
  * about polyline

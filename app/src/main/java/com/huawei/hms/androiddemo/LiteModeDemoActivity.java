@@ -13,47 +13,56 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- *  2020.1.3-Changed modify the import classes type and add some mapView demos.
+ *  2020.1.3-Changed modify the import classes type and add some liteMode demos.
  *                  Huawei Technologies Co., Ltd.
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
+import com.huawei.hms.maps.HuaweiMapOptions;
 import com.huawei.hms.maps.MapView;
 import com.huawei.hms.maps.OnMapReadyCallback;
 import com.huawei.hms.maps.model.LatLng;
-import com.huawei.hms.maps.util.LogM;
 
-public class MapViewDemoActivity extends AppCompatActivity implements OnMapReadyCallback {
+import androidx.appcompat.app.AppCompatActivity;
 
-    private static final String TAG = "MapViewDemoActivity";
-
-    private HuaweiMap hMap;
-
-    private MapView mMapView;
+/**
+ * Lite Mode
+ */
+public class LiteModeDemoActivity extends AppCompatActivity implements OnMapReadyCallback {
+    private static final String TAG = "LiteModeDemoActivity";
 
     private static final String MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";
 
+    HuaweiMap hMap;
+
+    MapView mMapView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        LogM.d(TAG, "onCreate:");
+        Log.d(TAG, "onCreate: ");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mapview_demo);
-        mMapView = findViewById(R.id.mapView);
+        HuaweiMapOptions huaweiMapOptions = new HuaweiMapOptions();
+        huaweiMapOptions.liteMode(true);
+        huaweiMapOptions.compassEnabled(true);
+        huaweiMapOptions.zoomControlsEnabled(true);
+        huaweiMapOptions.scrollGesturesEnabled(true);
+        huaweiMapOptions.zoomGesturesEnabled(true);
+        mMapView = new MapView(this, huaweiMapOptions);
         Bundle mapViewBundle = null;
         if (savedInstanceState != null) {
             mapViewBundle = savedInstanceState.getBundle(MAPVIEW_BUNDLE_KEY);
         }
+
         mMapView.onCreate(mapViewBundle);
         mMapView.getMapAsync(this);
+        setContentView(mMapView);
     }
 
     @Override
@@ -78,7 +87,6 @@ public class MapViewDemoActivity extends AppCompatActivity implements OnMapReady
     public void onMapReady(HuaweiMap map) {
         Log.d(TAG, "onMapReady: ");
         hMap = map;
-        hMap.setMyLocationEnabled(false);
         hMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(48.893478, 2.334595), 10));
     }
 
@@ -98,5 +106,11 @@ public class MapViewDemoActivity extends AppCompatActivity implements OnMapReady
     public void onLowMemory() {
         super.onLowMemory();
         mMapView.onLowMemory();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mMapView.onSaveInstanceState(outState);
     }
 }

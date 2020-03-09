@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.huawei.hms.maps.workshop">
+    package="com.huawei.hms.androiddemo">
 
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -24,7 +24,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.huawei.hms.maps.workshop.MainActivity"
+            android:name="com.huawei.hms.androiddemo.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,67 +34,67 @@
         </activity>
 
         <activity
-            android:name="com.huawei.hms.maps.workshop.CircleDemoActivity"
+            android:name="com.huawei.hms.androiddemo.CircleDemoActivity"
             android:label="CircleDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.ControlsDemoActivity"
+            android:name="com.huawei.hms.androiddemo.ControlsDemoActivity"
             android:label="ControlsDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.GestureDemoActivity"
+            android:name="com.huawei.hms.androiddemo.GestureDemoActivity"
             android:label="GestureDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.GroundOverlayDemoActivity"
+            android:name="com.huawei.hms.androiddemo.GroundOverlayDemoActivity"
             android:label="GroundOverlayDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.LiteModeDemoActivity"
+            android:name="com.huawei.hms.androiddemo.LiteModeDemoActivity"
             android:label="LiteModeDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MapFunctionsDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MapFunctionsDemoActivity"
             android:label="MapFunctions" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MoreLanguageDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MoreLanguageDemoActivity"
             android:label="MoreLanguageDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.PolygonDemoActivity"
+            android:name="com.huawei.hms.androiddemo.PolygonDemoActivity"
             android:label="PolygonDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.PolylineDemoActivity"
+            android:name="com.huawei.hms.androiddemo.PolylineDemoActivity"
             android:label="PolylineDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.LocationSourceDemoActivity"
+            android:name="com.huawei.hms.androiddemo.LocationSourceDemoActivity"
             android:label="LocationSourceDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MarkerDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MarkerDemoActivity"
             android:label="MarkerDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.CameraDemoActivity"
+            android:name="com.huawei.hms.androiddemo.CameraDemoActivity"
             android:label="CameraDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.BasicMapDemoActivity"
+            android:name="com.huawei.hms.androiddemo.BasicMapDemoActivity"
             android:label="BasicMapDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MapFragmentDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MapFragmentDemoActivity"
             android:label="MapFragmentDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MapViewDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MapViewDemoActivity"
             android:label="MapViewDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.SupportMapDemoActivity"
+            android:name="com.huawei.hms.androiddemo.SupportMapDemoActivity"
             android:label="SupportMapDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.SupportMapCodeDemoActivity"
+            android:name="com.huawei.hms.androiddemo.SupportMapCodeDemoActivity"
             android:label="SupportMapCodeDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MapViewCodeDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MapViewCodeDemoActivity"
             android:label="MapViewCodeDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.MapFragmentCodeDemoActivity"
+            android:name="com.huawei.hms.androiddemo.MapFragmentCodeDemoActivity"
             android:label="MapFragmentCodeDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.StyleMapDemoActivity"
+            android:name="com.huawei.hms.androiddemo.StyleMapDemoActivity"
             android:label="StyleMapDemo" />
         <activity
-            android:name="com.huawei.hms.maps.workshop.EventsDemoActivity"
+            android:name="com.huawei.hms.androiddemo.EventsDemoActivity"
             android:label="EventsDemo" />
 
     </application>

@@ -13,17 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- *  2020.1.3-Changed modify the import classes type and add some map control demos.
+ *  2020.1.3-Changed modify the import classes type and add some support languages demo.
  *                  Huawei Technologies Co., Ltd.
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.huawei.hms.maps.HuaweiMap;
 import com.huawei.hms.maps.OnMapReadyCallback;
@@ -31,10 +32,10 @@ import com.huawei.hms.maps.SupportMapFragment;
 import com.huawei.hms.maps.util.LogM;
 
 /**
- * Map control related
+ * Map support multi-language
  */
-public class ControlsDemoActivity extends AppCompatActivity implements OnMapReadyCallback {
-    private static final String TAG = "ControlsDemoActivity";
+public class MoreLanguageDemoActivity extends AppCompatActivity implements OnMapReadyCallback {
+    private static final String TAG = "MoreLanguageDemoActivity";
 
     private SupportMapFragment mSupportMapFragment;
 
@@ -43,8 +44,11 @@ public class ControlsDemoActivity extends AppCompatActivity implements OnMapRead
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_controls_demo);
-        mSupportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapInControls);
+        setContentView(R.layout.activity_more_language_demo);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.mapInLanguage);
+        if (fragment instanceof SupportMapFragment) {
+            mSupportMapFragment = (SupportMapFragment) fragment;
+        }
         mSupportMapFragment.getMapAsync(this);
     }
 

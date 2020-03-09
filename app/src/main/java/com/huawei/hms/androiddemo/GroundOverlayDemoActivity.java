@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -39,7 +39,7 @@ import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
 import com.huawei.hms.maps.OnMapReadyCallback;
 import com.huawei.hms.maps.SupportMapFragment;
-import com.huawei.hms.maps.workshop.utils.MapUtils;
+import com.huawei.hms.androiddemo.utils.MapUtils;
 import com.huawei.hms.maps.model.BitmapDescriptorFactory;
 import com.huawei.hms.maps.model.CameraPosition;
 import com.huawei.hms.maps.model.GroundOverlay;
@@ -53,8 +53,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsEdit;
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsRight;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsEdit;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsRight;
 
 /**
  * about groundOverlay

@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import com.huawei.hms.maps.CameraUpdate;
 import com.huawei.hms.maps.HuaweiMap;

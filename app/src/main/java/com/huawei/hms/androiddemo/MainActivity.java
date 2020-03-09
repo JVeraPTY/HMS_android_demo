@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.Manifest;
 import android.content.Context;

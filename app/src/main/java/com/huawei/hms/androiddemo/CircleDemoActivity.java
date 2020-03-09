@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -40,8 +40,8 @@ import com.huawei.hms.maps.model.CircleOptions;
 import com.huawei.hms.maps.model.LatLng;
 import com.huawei.hms.maps.util.LogM;
 
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsEdit;
-import static com.huawei.hms.maps.workshop.utils.CheckUtils.checkIsRight;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsEdit;
+import static com.huawei.hms.androiddemo.utils.CheckUtils.checkIsRight;
 
 /**
  * circle related

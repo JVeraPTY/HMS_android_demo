@@ -14,7 +14,7 @@
     limitations under the License.
  */
 
-package com.huawei.hms.maps.workshop.utils;
+package com.huawei.hms.androiddemo.utils;
 
 public class CheckUtils {
     public static boolean isNumber(String value) {

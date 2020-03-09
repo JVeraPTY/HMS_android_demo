@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Map Kit Sample</string>
-    <string name="title_activity_main">Huawei Map Demo</string>
+    <string name="app_name">HMS Workshop</string>
+    <string name="title_activity_main">Huawei workshop</string>
     <string name="styled_map">StyledMap</string>
     <string name="tap_instructions">Tap or long press on the map</string>
     <string name="toLatlng">screen Point to latLng</string>

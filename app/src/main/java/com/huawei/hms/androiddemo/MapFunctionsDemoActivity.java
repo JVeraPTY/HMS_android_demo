@@ -18,7 +18,7 @@
  *
  */
 
-package com.huawei.hms.maps.workshop;
+package com.huawei.hms.androiddemo;
 
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +34,7 @@ import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
 import com.huawei.hms.maps.OnMapReadyCallback;
 import com.huawei.hms.maps.SupportMapFragment;
-import com.huawei.hms.maps.workshop.utils.MapUtils;
+import com.huawei.hms.androiddemo.utils.MapUtils;
 import com.huawei.hms.maps.util.LogM;
 
 /**

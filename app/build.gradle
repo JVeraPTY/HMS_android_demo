@@ -3,10 +3,10 @@ apply plugin: 'com.huawei.agconnect'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "29.0.0"
+    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.huawei.hms.androiddemo"
-        minSdkVersion 19
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -35,7 +35,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.huawei.hms:maps:4.0.0.302'
+    implementation 'com.huawei.hms:location:4.0.1.300'
 }
 

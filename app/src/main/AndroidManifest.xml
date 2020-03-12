@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
 
     <application
         android:allowBackup="false"
@@ -86,7 +87,7 @@
             android:label="SupportMapCodeDemo" />
         <activity
             android:name="com.huawei.hms.androiddemo.MapViewCodeDemoActivity"
-            android:label="MapViewCodeDemo" />
+            android:label="Ubicacion actual" />
         <activity
             android:name="com.huawei.hms.androiddemo.MapFragmentCodeDemoActivity"
             android:label="MapFragmentCodeDemo" />

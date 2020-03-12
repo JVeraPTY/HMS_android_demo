@@ -34,6 +34,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
 import com.huawei.hms.maps.CameraUpdate;
 import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
@@ -50,17 +54,13 @@ import com.huawei.hms.maps.util.ResourceBitmapDescriptor;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
 /**
  * Marker related
  */
 public class MarkerDemoActivity extends AppCompatActivity implements OnMapReadyCallback {
     private static final String TAG = "MarkerDemoActivity";
 
-    private static final LatLng PARIS = new LatLng(48.893478, 2.334595);
+    private static final LatLng PARIS = new LatLng(14.6262096, -90.5626012);
 
     private static final LatLng SERRIS = new LatLng(48.7, 2.31);
 
